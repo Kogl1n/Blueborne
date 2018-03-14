@@ -2,7 +2,7 @@
 on Huawei Honor 4X
 
 # Note
-Be aware that on ARM code is compiled having one Byte offset after the function label due to different execution instruction sets offered on ARM chips.
+Be aware that on ARM code is compiled having one Byte offset after the function label due to different execution instruction sets offered on ARM chips, specifically "ARM mode" and "Thumb mode".
 
 # Run
 Make sure you have pybluez and pwntools installed:
