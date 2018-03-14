@@ -1,14 +1,21 @@
-# CVE-2017-0785 PoC
+# Blueborne PoC
+on Huawei Honor 4X Che2-L11
 
-This is just a personal study based on the Android information leak vulnerability released by Armis.
+# Note
+Be aware that on ARM code is compiled having one Byte offset after the function label due to different execution instruction sets offered on ARM chips.
 
-Further reading: https://www.armis.com/blueborne/
-
-To run, be sure to have pybluez and pwntools installed.
+# Run
+Make sure you have pybluez and pwntools installed:
+on Ubuntu (apt-get) execute the following commands:
 
 ```
 sudo apt-get install bluetooth libbluetooth-dev
 sudo pip install pybluez
 sudo pip install pwntools
 ```
+
+## Further reading: https://www.armis.com/blueborne/
+## Credits: https://github.com/ojasookert/CVE-2017-0785 for CVE-2017-0785 PoC (information leak vulnerability)
+
+
 
