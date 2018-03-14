@@ -18,6 +18,7 @@ sudo pip install pwntools
 https://www.armis.com/blueborne/
 # Credits
 https://github.com/ojasookert/CVE-2017-0785 for CVE-2017-0785 PoC (information leak vulnerability)
+https://github.com/ArmisSecurity/blueborne for the research and extensive code 
 
 
 
