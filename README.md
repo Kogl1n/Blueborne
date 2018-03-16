@@ -1,6 +1,8 @@
 # Blueborne PoC
 on Huawei Honor 4X
 
+The reason this exploit hasn't been seen in public use is that it requires information leak about the location of libraries in the victim's memory via the information leak vulnerability (CVE-2017-0785) since different phone models have different libraries due to compiling. With that information one can overcome the ASLR quite easily because there are no other methods of stack protection in use like a stack canary.
+
 # Note
 Be aware that on ARM code is compiled having one Byte offset after the function label due to different execution instruction sets offered on ARM chips, specifically "ARM mode" and "Thumb mode".
 
