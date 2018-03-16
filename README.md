@@ -1,6 +1,10 @@
-# Blueborne PoC
+# BlueBorne PoC (CVE-2017-0781)
 on Huawei Honor 4X
 
+# What is it?
+A company called Armis published a PoC of a family of RCE Bluetooth vulnerabilities (not only but here limited to Android). They called it BlueBorne.
+
+# Why hasn't it been in the wild?
 The reason this exploit hasn't been seen in public use is that it requires information leak about the location of libraries in the victim's memory via the information leak vulnerability (CVE-2017-0785) since different phone models have different libraries due to compiling. With that information one can overcome the ASLR quite easily because there are no other methods of stack protection in use like a stack canary.
 
 # Note
