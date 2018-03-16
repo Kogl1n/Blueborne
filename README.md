@@ -16,7 +16,7 @@ adb shell setprop debug.debuggerd.wait_for_gdb true
 adb shell setprop debug.db.uid 999999
 At the end of the usual crash output, debuggerd provides instructions on how to connect gdb using the command:
 gdbclient PID
-
+https://source.android.com/devices/tech/debug/gdb
 
 # Run
 Make sure you have pybluez and pwntools installed:
