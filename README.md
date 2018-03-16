@@ -6,6 +6,18 @@ The reason this exploit hasn't been seen in public use is that it requires infor
 # Note
 Be aware that on ARM code is compiled having one Byte offset after the function label due to different execution instruction sets offered on ARM chips, specifically "ARM mode" and "Thumb mode".
 
+
+
+# Debugging apps or processes that crash
+If you want debuggerd to suspend crashed processes so you can attach gdb, set the appropriate property:
+## Android 7.0 Nougat and later.
+adb shell setprop debug.debuggerd.wait_for_gdb true
+## Android 6.0 Marshmallow and earlier.
+adb shell setprop debug.db.uid 999999
+At the end of the usual crash output, debuggerd provides instructions on how to connect gdb using the command:
+gdbclient PID
+
+
 # Run
 Make sure you have pybluez and pwntools installed:
 on Ubuntu (apt-get) execute the following commands:
